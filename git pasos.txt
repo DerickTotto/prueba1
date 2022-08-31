@@ -1,0 +1,58 @@
+https://www.youtube.com/watch?v=VdGzPZ31ts8
+
+1) verify git version after install git 
+git --version
+2) configuration of git
+git config --global user.name "Derick J. Carcamo"
+git config --global user.email "derick_vlk_10@hotmail.es"
+git config --global core.editor "code --wait"
+git config --global -e
+git config --global core.autocrlf true //Pc Windows
+git config --global core.autocrlf input //linux or mac 
+
+#More command
+git config --global -h
+
+
+#commando gitbash
+
+ls // list of folder
+ls -a // view folder or file oculto
+pwd // directory i'm in
+cd // navegate in directories
+mkdir testgit // create directory
+rm login.html //delete file or ->  git rm login.html
+mv index.html index2.html // move file
+cat recentLink.html // show content file
+
+#start git
+git init
+
+git status //return el estado de todo el proyecto
+git status -s //return el estado de todo el proyecto
+git add (namefile.html (specific file), *.html(all files html), . ->(all))
+git add (namefile1.html namefile2.html)
+
+git commit -m "Commit Inicial"
+git restore index.html // only before the add(stage)
+git restore --stage index.html // only before the commit
+
+#ignore files
+create .gitignore
+
+git diff // change in files
+git diff --staged // change in files at staged
+git log or git log --oneline
+
+#new branch
+git branch
+git checkout -b ramab //create new brach
+git checkout master //change brach
+
+
+#set changes in ramab in master
+git merge ramab
+
+
+git remote add origin https://github.com/DerickTotto/mywebsite.git
+git push -u -f origin master
